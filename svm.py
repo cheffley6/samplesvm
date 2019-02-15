@@ -2,8 +2,8 @@ from sklearn.svm import SVC
 import warnings
 warnings.filterwarnings("ignore")
 
-trainingdata = 'a1a.txt'
-testdata = 'a1a.t'
+trainingdata = 'compositetrainingset.txt'
+testdata = 'compositetestingset.t'
 trainingx = []
 trainingy = []
 testx = []
@@ -49,4 +49,5 @@ for i in range(len(result)):
 
 print("number correctly predicted: ", correct)
 print("total predictions made: ", correct + incorrect)
+print("accuracy: ", correct / (correct + incorrect))
 
